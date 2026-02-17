@@ -1,0 +1,23 @@
+{
+  "name": "Dominik",
+  "skills": [
+    "HTML & CSS",
+    "JavaScript (základy)",
+    "C – školní projekty",
+    "Arduino & logické obvody",
+    "Git & GitHub"
+  ],
+  "interests": [
+    "Web development",
+    "Elektronika",
+    "Moderní technologie",
+    "Elektromobilita"
+  ],
+  "projects": [
+    {
+      "title": "Osobní IT profil",
+      "description": "Dynamický osobní profil vytvořený pomocí HTML, CSS a JavaScriptu",
+      "link": "https://github.com/"
+    }
+  ]
+}
