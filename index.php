@@ -23,7 +23,11 @@ $data = json_decode($jsonData, true);
     <main class="container">
         <section class="card">
             <h2>🛠️ Dovednosti</h2>
-            <ul id="skills" class="skills-list"></ul>
+            <ul id="skills" class="skills-list">
+                <?php foreach ($data['skills'] as $skill): ?>
+                    <li><?php echo htmlspecialchars($skill); ?></li>
+                <?php endforeach; ?>
+            </ul>
         </section>
 
         <section class="card">
