@@ -16,8 +16,7 @@ $data = json_decode($jsonData, true);
 
     <header>
         <div class="container">
-            <h1 id="name"></h1>
-            <p id="job-title" class="subtitle"></p>
+            <h1 id="name"><?php echo htmlspecialchars($data['name']); ?></h1>
         </div>
     </header>
 
