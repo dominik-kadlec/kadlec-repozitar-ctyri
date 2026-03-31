@@ -32,7 +32,11 @@ $data = json_decode($jsonData, true);
 
         <section class="card">
             <h2>💡 Zájmy</h2>
-            <ul id="interests" class="interests-list"></ul>
+            <ul id="interests" class="interests-list">
+                <?php foreach ($data['interests'] as $interest): ?>
+                    <li><?php echo htmlspecialchars($interest); ?></li>
+                <?php endforeach; ?>
+            </ul>
         </section>
 
         <section class="card">
