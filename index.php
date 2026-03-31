@@ -42,6 +42,5 @@ $data = json_decode($jsonData, true);
         <p>&copy; 2026 Dominik Kadlec, Vytvořeno pro předmět ASO</p>
     </footer>
 
-    
 </body>
 </html>
