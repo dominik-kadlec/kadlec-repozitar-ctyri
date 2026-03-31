@@ -1,3 +1,8 @@
+<?php
+// Načtení dat ze souboru profile.json a převod na PHP pole
+$jsonData = file_get_contents('profile.json');
+$data = json_decode($jsonData, true);
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
