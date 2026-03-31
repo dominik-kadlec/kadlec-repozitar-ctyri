@@ -41,7 +41,15 @@ $data = json_decode($jsonData, true);
 
         <section class="card">
             <h2>🚀 Projekty</h2>
-            <div id="projects" class="projects-grid"></div>
+            <div id="projects" class="projects-grid">
+                <?php foreach ($data['projects'] as $project): ?>
+                    <div class="project-item">
+                        <h3><?php echo htmlspecialchars($project['title']); ?></h3>
+                        <p><?php echo htmlspecialchars($project['description']); ?></p>
+                        <a href="<?php echo htmlspecialchars($project['link']); ?>" target="_blank" class="btn">Zobrazit projekt</a>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </section>
     </main>
 
